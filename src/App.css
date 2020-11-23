@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+/* GLOBAL ----------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* MENU --------------------------- */
+
+.navbar {
+  background-color: #222831;
+  color: #ffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar i {
+  color: #00adb5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 30vh;
+  background-color: #eeeeee;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-right: 2px solid #00adb5;
+  border-bottom: 2px solid #00adb5;
+  border-radius: 5px;
+  margin: 3px;
+  width: 150px;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover {
+  color: #ffffff;
+  border-right: 4px solid #00adb5;
+  border-bottom: 4px solid #00adb5;
+  transform: scale(1.05);
+}
+
+/* CHALLENGE HEADER ------------------------------ */
+
+.challenge-header {
+  border: 1px solid #222831;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.challenge-header button {
+  margin: 10px 0px;
+  background: #00adb5;
+  border-right: 2px solid #222831;
+  border-bottom: 2px solid#222831;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
 }

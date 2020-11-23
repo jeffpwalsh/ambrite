@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Menu from './components/Menu';
+
+import Page1 from './components/Page1';
+import Page2 from './components/Page2';
+import Page3 from './components/Page3';
+
+import './palettelist.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <Menu
+          btn1='Challenge 1'
+          btn2='Challenge 2 '
+          btn3='Challenge 3'
+          title='Ambrite Test'
+          icon='fas fa-3x fa-laptop-code'
+        />
+        <Route exact path='/page1' component={Page1} />
+        <Route exact path='/page2' component={Page2} />
+        <Route exact path='/page3' component={Page3} />
+      </div>
+    </Router>
   );
 }
 

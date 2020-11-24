@@ -1,0 +1,98 @@
+/* GLOBAL ----------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MENU --------------------------- */
+
+.navbar {
+  background-color: #222831;
+  color: #ffff;
+}
+
+.navbar i {
+  color: #00adb5;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 30vh;
+  background-color: #eeeeee;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-right: 2px solid #00adb5;
+  border-bottom: 2px solid #00adb5;
+  border-radius: 5px;
+  margin: 3px;
+  width: 150px;
+  height: 50px;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  border-right: 4px solid #00adb5;
+  border-bottom: 4px solid #00adb5;
+  transform: scale(1.05);
+}
+
+/* CHALLENGE HEADER ------------------------------ */
+
+.challenge-header {
+  border: 1px solid #222831;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.challenge-header button {
+  margin: 10px 0px;
+  background: #00adb5;
+  border-right: 2px solid #222831;
+  border-bottom: 2px solid#222831;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+}
+
+table {
+  background-color: #00adb5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+.Hidden {
+  display: none;
+}
+
+.Visible {
+  display: block;
+  margin: 30;
+}
+
+.validator {
+
+  background:lightgreen;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.type {
+  background:lightsalmon;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+
+}

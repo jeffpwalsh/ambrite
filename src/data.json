@@ -3732,12 +3732,12 @@
     "asn": 1835,
     "countrycode": "DK",
     "id": 555,
-    "statecode": null,
+    "statecode": 1,
     "meta": "DeIC /\nDIX / I2 DTU Building 304 130.226.249.126 Kongens Lyngby deic01.ring.nlnog.net 404"
   },
   {
     "active": 1,
-    "asn": 62874,
+    "asn": "62874",
     "countrycode": "US",
     "id": 728,
     "statecode": null,

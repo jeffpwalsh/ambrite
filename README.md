@@ -1,9 +1,8 @@
 # Notes: ReactJS coding challenge
 
 ### `Live link`
-```
-https://ambrite.herokuapp.com/
-```
+
+- https://ambrite.herokuapp.com/
 
 ### `Installation`
 ```

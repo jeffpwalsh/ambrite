@@ -1,4 +1,4 @@
-# React coding challenge
+# Notes: ReactJS coding challenge
 
 ### `Installation`
 ```

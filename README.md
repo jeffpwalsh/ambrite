@@ -20,7 +20,7 @@ React Hooks
 ```
 Reactjs
 Reactstrap UI
-Bootsrtap
+Bootstrap
 Loadash
 React Hooks
 Context API

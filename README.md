@@ -32,6 +32,8 @@ Context API
 
 ### `Log`
 ```
-commit - ver 1.00 @ 27/11/2020
+27/11/20 - commit - ver 1.00
+28/11/20 - deployed Heroku
+
 ```
 

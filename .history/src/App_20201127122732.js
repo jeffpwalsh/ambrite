@@ -17,6 +17,7 @@ function App() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    
     //MAPPED THROUGH THE GLOBAL STATE DATASETS AND CREATED AN OBJECT ENTRY FOR BOTH.
 
     const Meta = data.map((map) => map);
@@ -37,9 +38,9 @@ function App() {
     let newArray = [];
 
     //I TOOK THE IPV4 PROPERTY VALUE AND MATCHED THE META DATA PROPERTY STRING FIELD.
-    //I PUSHED THE "MATCH" TO A NEW ARRAY WITH THE CORRECT INDEX/SEQUENCE FOR THE DATA.JSON DATA-SET.
-    //I EXPORTED THIS NEW MERGED DATA SET AS GLOBAL STATE VAR TO USE IN ALL THE CHALLENGES.
-    //I'VE COMMENTED OUT LOGS PURELY FOR PERFORMANCE. THE CODE WILL RUN IF YOU CHOOSE TO UNCOMMENT LOGS ON DIFFERENT COMPONENTS TO SEE MY WORKINGS.
+    //I PUSHED THE "MATCH" TO A NEW ARRAY WITH THE CORRECT INDEX/SEQUENCE FOR THE DATA.JSON DATA-SET
+    //I UTILISED THE NEW DATA SET FOR ALL CHALLENGES
+    //I'VE COMMENTED OUT LOGS PURELY FOR PERFORMANCE. CODE WILL RUN IF YOU CHOOSE TO UNCOMMENT TO VIEW LOGS
 
     for (let i = 0; i < data.length; i++) {
       for (let j = 0; j < metaData.length; j++)
@@ -67,7 +68,6 @@ function App() {
   }, []);
 
   return (
-    //CONTEXT API - GLOBAL STATE
     <DATA_SET.Provider value={posts}>
       <Router>
         <div className='App'>
@@ -78,7 +78,6 @@ function App() {
             title='Ambrite Test'
             icon='fas fa-3x fa-laptop-code'
           />
-          {/* ROUTER */}
           <Route exact path='/page1' component={Page1} />
           <Route exact path='/page2' component={Page2} />
           <Route exact path='/page3' component={Page3} />

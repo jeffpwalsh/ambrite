@@ -34,7 +34,7 @@ function ComponentChallenge2COPY() {
   //=======EVENT HANDLER
   const handleTask = () => {
     //=============
-
+    
     //I MAPPED THROUGH GEO.JSON META DATA VALUES AND MATCHED IT TO DATA.JSON IPV4 VALUES
     //I MANIPULATED THE STRING, MADE TWO NEW ARRAYS AND REMOVED UNWANTED CHARS
     //I CONVERTED THE ARRAYS TO NUMBER TYPES
@@ -44,6 +44,7 @@ function ComponentChallenge2COPY() {
     const arr5 = arr4.map((item) => item.split(',', 1));
     const arr6 = arr5.map((item) => parseFloat(item));
     arr6.map((item) => item);
+
 
     let arr7 = [];
 
@@ -154,6 +155,7 @@ function ComponentChallenge2COPY() {
               {distance.map((item, index) => (
                 <tr className='data' key={index}>
                   <td>{item}km</td>
+              
                 </tr>
               ))}
             </tbody>

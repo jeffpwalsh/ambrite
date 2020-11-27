@@ -17,6 +17,7 @@ function App() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    
     //MAPPED THROUGH THE GLOBAL STATE DATASETS AND CREATED AN OBJECT ENTRY FOR BOTH.
 
     const Meta = data.map((map) => map);
@@ -67,7 +68,6 @@ function App() {
   }, []);
 
   return (
-    //CONTEXT API - GLOBAL STATE
     <DATA_SET.Provider value={posts}>
       <Router>
         <div className='App'>
@@ -78,7 +78,6 @@ function App() {
             title='Ambrite Test'
             icon='fas fa-3x fa-laptop-code'
           />
-          {/* ROUTER */}
           <Route exact path='/page1' component={Page1} />
           <Route exact path='/page2' component={Page2} />
           <Route exact path='/page3' component={Page3} />

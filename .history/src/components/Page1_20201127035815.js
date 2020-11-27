@@ -1,4 +1,5 @@
 import React from 'react';
+
 import C1 from './ComponentChallenge1';
 
 function Page1() {

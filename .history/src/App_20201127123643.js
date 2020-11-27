@@ -78,7 +78,6 @@ function App() {
             title='Ambrite Test'
             icon='fas fa-3x fa-laptop-code'
           />
-          {/* ROUTER */}
           <Route exact path='/page1' component={Page1} />
           <Route exact path='/page2' component={Page2} />
           <Route exact path='/page3' component={Page3} />

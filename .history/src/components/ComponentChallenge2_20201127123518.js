@@ -34,10 +34,11 @@ function ComponentChallenge2COPY() {
   //=======EVENT HANDLER
   const handleTask = () => {
     //=============
-
+    
     //I MAPPED THROUGH GEO.JSON META DATA VALUES AND MATCHED IT TO DATA.JSON IPV4 VALUES
     //I MANIPULATED THE STRING, MADE TWO NEW ARRAYS AND REMOVED UNWANTED CHARS
     //I CONVERTED THE ARRAYS TO NUMBER TYPES
+    
     const arr4 = dataSet.map((item) => item.geo);
 
     console.log(arr4);
@@ -45,6 +46,7 @@ function ComponentChallenge2COPY() {
     const arr6 = arr5.map((item) => parseFloat(item));
     arr6.map((item) => item);
 
+    //SPLIT GPS COORDINATES
     let arr7 = [];
 
     for (let i = 0; i < dataSet.length; i++) {
@@ -154,6 +156,8 @@ function ComponentChallenge2COPY() {
               {distance.map((item, index) => (
                 <tr className='data' key={index}>
                   <td>{item}km</td>
+                  {/* <td>{latitude}</td>
+                  <td>{longitude}</td> */}
                 </tr>
               ))}
             </tbody>

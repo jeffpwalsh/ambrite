@@ -7,7 +7,7 @@ function Menu(props) {
     console.log(`${e.target.name} button clicked`);
   }
 
-  //MADE USE OF PROPS FOR EVENT AND ROUTER NAVIGATION
+ //m 
   return (
     <Fragment>
       <Navbar>

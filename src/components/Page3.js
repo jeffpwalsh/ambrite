@@ -1,5 +1,4 @@
 import React from 'react';
-
 import C3 from './ComponentChallenge3';
 
 function Page3() {

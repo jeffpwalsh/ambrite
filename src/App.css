@@ -4,6 +4,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+}
+
+/* UTILITIES*/
+
+.data {
+  color: red;
+  text-align: center;
+}
+
+.span {
+  font-size: 30px;
+  color: #00adb5;
+}
+
+.list:hover {
+  background-color: #00adb5;
+}
+
+option {
+  background-color: #393e46;
+  color: #ffff;
+}
+
+.validator {
+  background: #5cb85c;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.type {
+  background: yellow;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
 }
 
 /* MENU --------------------------- */
@@ -51,6 +87,7 @@
   border: 1px solid #222831;
   text-align: center;
   padding: 30px 0px;
+  overflow-wrap: normal;
 }
 
 .challenge-header button {
@@ -63,44 +100,92 @@
   height: 50px;
 }
 
+/* TABLE RENDERS --------------------------------- */
 table {
-
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
   border: 2px solid lightgray;
-  
+  width: 100%;
 }
 
 table th {
   background-color: #00adb5;
   border: 2px solid lightgray;
-  border-bottom: 2px solid #393e46; 
-
+  border-bottom: 2px solid #393e46;
 }
 
-.Hidden {
+/* DISPLAY TOGGLE CONTAINERS ------------------ */
+
+.C1-OFF {
   display: none;
 }
 
-.Visible {
+.C1-ON {
   display: block;
-  margin: 30px 0 0 0;
+  width: 60%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.validator {
-
-  background:lightgreen;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 0 10px;
+.C2-OFF {
+  display: none;
 }
 
-.type {
-  background:lightsalmon;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 0 10px;
+.C2-ON {
+  display: block;
+  display: flex;
+  width: 75%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.C3-OFF {
+  display: none;
+}
+
+.C3-ON {
+  display: block;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  align-items: center;
+}
+
+.card {
+  display: inline-block;
+}
+
+.list {
+  display: inline-block;
+  border: 1px solid black;
+  list-style: none;
+  padding: 5px 8px;
+  width: 150px;
+  height: 50px;
+  background-color: #393e46;
+  border: 1px solid #f3f3f3;
+  border-bottom: 2px solid #00adb5;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+button.C3-ON.btn.btn-secondary {
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center;
+  width: 100px;
+  /* height: 60px; */
+  overflow-wrap: break-word;
+  margin-left: 30px;
 }

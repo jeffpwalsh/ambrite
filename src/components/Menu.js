@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Nav, NavLink, Navbar, Button } from 'reactstrap';
+import { Nav, Navbar } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function Menu(props) {

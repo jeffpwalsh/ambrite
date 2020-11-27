@@ -1,6 +1,6 @@
 # React coding challenge
 
-### Installation
+### `Installation`
 ```
 npm install
 npm start
@@ -26,7 +26,7 @@ React Hooks
 Context API
 ```
 
-## Log
+### `Log`
 ```
 commit - ver 1.00 @ 27/11/2020
 ```
